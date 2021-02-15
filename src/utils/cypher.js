@@ -1,5 +1,5 @@
-import crypto from 'crypto';
-export class Cypher {
+const crypto = require('crypto');
+class Cypher {
     constructor(aesKey, ivKey) {
         this.aesKey = aesKey;
         this.ivKey = ivKey;
@@ -31,4 +31,6 @@ export class Cypher {
         const decrypted = decipher.update(encryptedText);
         const decryptedData = Buffer.concat([decrypted, decipher.final()]); return decryptedData.toString();
     }
-} 
+}
+
+module.exports = Cypher

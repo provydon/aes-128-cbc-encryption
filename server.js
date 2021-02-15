@@ -3,7 +3,9 @@
 // API boilerplate
 const express = require('express');
 const app = express();
+const dotenv = require('dotenv').config()
 const routes = require('./routes');
+
 
 // Logging
 const morgan = require('morgan');
@@ -11,6 +13,11 @@ const logger = require('./logger');
 
 // Config
 const config = require('config');
+
+// dotenv
+if (dotenv.error) {
+    throw dotenv.error
+}
 
 // Set up middleware for request parsing, logging, etc.
 app.use(express.json());

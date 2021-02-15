@@ -1,18 +1,19 @@
-# Node.js REST API Template
-[![Build Status](https://travis-ci.org/jaredpetersen/nodejs-api-template.svg?branch=master)](https://travis-ci.org/jaredpetersen/nodejs-api-template)
+# AES 128 CBC Encryption
 
-Simple template for creating a Node.js REST API
+## Inital Build Setup
 
-## Endpoints
-* `GET /health`: Gets API health status
-* `GET /tasks`: Lists all tasks
-* `POST /tasks`: Intentionally buggy route, returns an error
-* `null`: Default route, returns 404 as the endpoint requested does not exist
+```bash
+# install dependencies
+$ npm install
 
-## Usage
+# create a .env file in the root of the project, and copy and paste the contents of .env.example into it and save it.
+
+# Set Your APP_ID, USER_AES_KEY and USER_IV_KEY in the .env file.
+
+# start server
+$ npm run watch
+
+# And you're good to go!
 ```
-npm install
-npm test
-npm run test-coverage
-npm start
-```
+
+For detailed explanation on how things work, check out (https://searchsecurity.techtarget.com/definition/Advanced-Encryption-Standard).
