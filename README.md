@@ -13,6 +13,9 @@ $ npm install
 # start server
 $ npm run watch
 
+# test the endpoints.. the available endpoints are
+$ /encrypt, /decrypt
+
 # And you're good to go!
 ```
 
